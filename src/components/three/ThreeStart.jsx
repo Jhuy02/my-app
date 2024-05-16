@@ -4,7 +4,7 @@ import { MeshDistortMaterial, OrbitControls, Sphere } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import Cube from "./Cube";
 
-export default function ThreeStart() {
+export default function HocTap() {
   return (
     <div className="w-[30rem] h-[30rem]">
       <Canvas>

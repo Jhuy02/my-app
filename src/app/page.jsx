@@ -13,6 +13,7 @@ export default function page() {
         <TransitionLink href={"/home-smoother"}>home-smoother</TransitionLink>
         <TransitionLink href={"/form"}>FORM</TransitionLink>
         <TransitionLink href={"/animation3d"}>3D</TransitionLink>
+        <TransitionLink href={"/three"}>three</TransitionLink>
       </div>
       {/* <Smoother3 /> */}
       <Smoother2 />
