@@ -6,15 +6,15 @@ import Cube from "./Cube";
 
 export default function HocTap() {
   return (
-    <div className="w-[30rem] h-[30rem]">
+    <div className="w-full h-[100vh]">
       <Canvas>
         <OrbitControls enableZoom={false} />
         <ambientLight intensity={1} />
         <directionalLight position={[3, 2, 1]} />
-        <Sphere args={[1, 100, 200]} scale={2.4}>
+        <Sphere args={[100, 100, 200]} scale={2.4}>
           <MeshDistortMaterial
             attach={"material"}
-            distort={0.5}
+            distort={1}
             color="#2f77ecd1"
             speed={2}
           />

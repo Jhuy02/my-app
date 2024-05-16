@@ -7,7 +7,9 @@ useGLTF.preload("/robot_playground.glb");
 
 export default function Model() {
   const group = useRef(null);
-  const { nodes, materials, animations, scene } = useGLTF("/oto.glb");
+  const { nodes, materials, animations, scene } = useGLTF(
+    "/robot_playground.glb"
+  );
   const { actions, clips } = useAnimations(animations, scene);
   const scroll = useScroll();
 
