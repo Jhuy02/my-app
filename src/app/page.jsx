@@ -11,6 +11,8 @@ export default function page() {
         <TransitionLink href={"/chi-tiet-san-pham"}>Chi tiết</TransitionLink>
         <TransitionLink href={"/smoother3"}>Smoother 3</TransitionLink>
         <TransitionLink href={"/home-smoother"}>home-smoother</TransitionLink>
+        <TransitionLink href={"/form"}>FORM</TransitionLink>
+        <TransitionLink href={"/animation3d"}>3D</TransitionLink>
       </div>
       {/* <Smoother3 /> */}
       <Smoother2 />

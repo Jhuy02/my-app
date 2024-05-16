@@ -35,7 +35,6 @@ export default function Smoother2() {
     gsap.to("#box", {
       scrollTrigger: {
         trigger: "#box",
-        markers: true,
         scrub: true,
         start: "top top",
         end: "bottom top",

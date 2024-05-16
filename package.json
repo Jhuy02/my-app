@@ -9,10 +9,19 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-three/drei": "^9.105.6",
+    "@react-three/fiber": "^8.16.3",
+    "@react-three/postprocessing": "^2.16.2",
+    "googleapis": "^134.0.0",
     "gsap": "file:gsap-bonus.tgz",
-    "next": "14.1.4",
+    "next": "^14.2.2",
+    "next-video": "^1.0.4",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-google-drive-picker": "^1.2.2",
+    "react-social-media-embed": "^2.5.13",
+    "react-tiktok-embed": "^1.0.0",
+    "three": "^0.164.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",
