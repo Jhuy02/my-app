@@ -60,3 +60,12 @@
 .imagessm3 img:nth-child(8) {
   grid-area: 26/5/30/15;
 }
+
+.custom-scroll-controls::-webkit-scrollbar {
+  display: none;
+}
+
+.custom-scroll-controls {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}

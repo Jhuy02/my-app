@@ -13,18 +13,18 @@ export default function Model() {
   const { actions, clips } = useAnimations(animations, scene);
   const scroll = useScroll();
 
-  // useEffect(() => {
-  //   console.log(actions);
-  //   //@ts-ignore
-  //   // actions["Experiment"].play().paused = true;
-  // }, []);
-  // useFrame(
-  //   () =>
-  //     //@ts-ignore
-  //     (actions["Experiment"].time =
-  //       //@ts-ignore
-  //       (actions["Experiment"].getClip().duration * scroll.offset) / 1)
-  // );
+  useEffect(() => {
+    console.log(actions);
+    //@ts-ignore
+    actions["Experiment"].play().paused = true;
+  }, []);
+  useFrame(
+    () =>
+      //@ts-ignore
+      (actions["Experiment"].time =
+        //@ts-ignore
+        (actions["Experiment"].getClip().duration * scroll.offset) / 1)
+  );
   return (
     <group ref={group}>
       <primitive object={scene} />

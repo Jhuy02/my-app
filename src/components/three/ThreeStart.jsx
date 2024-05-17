@@ -11,16 +11,17 @@ export default function HocTap() {
         <OrbitControls enableZoom={false} />
         <ambientLight intensity={1} />
         <directionalLight position={[3, 2, 1]} />
-        <Sphere args={[100, 100, 200]} scale={2.4}>
+        {/* <Sphere args={[1, 1, 200]} scale={1.4}>
           <MeshDistortMaterial
             attach={"material"}
             distort={1}
             color="#2f77ecd1"
             speed={2}
           />
-        </Sphere>
-        {/* <Cube /> */}
+        </Sphere> */}
+        <Cube />
       </Canvas>
     </div>
   );
 }
+// args={[100, 100, 200]}
