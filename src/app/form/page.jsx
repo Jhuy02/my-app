@@ -1,4 +1,4 @@
-import FormDrive from "@/components/Formdrive";
+import FormDrive from "../../components/Formdrive";
 
 export default async function page() {
   const res = await fetch(

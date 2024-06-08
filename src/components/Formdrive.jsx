@@ -18,7 +18,7 @@ export default function FormDrive({ data }) {
   useEffect(() => {
     async function fetchData() {
       const res = await fetch(
-        `https://script.google.com/macros/s/AKfycbzpv5S7zAPCXGRYUBi4lo0KYrKzq3yDceQktBy7e7ifwfVG21GMMhiy0sviR5zGoY6E/exec?start=${start}&limit=5`
+        `https://script.google.com/macros/s/AKfycbx1RNJuTGQHzNTfUiDZ-0ttqMi-9iGWQIe5Ur_RElttcu6Jsh_6XL1pJ9oWy_Dy4_hIOA/exec?start=${start}&limit=5`
       );
       const resData = await res?.json();
       setDataApi(resData);
@@ -87,6 +87,8 @@ export default function FormDrive({ data }) {
       formdata?.append("entry.6745822", postData?.title);
       postData?.data && formdata?.append("entry.341395112", data?.link);
       formdata?.append("entry.629296373", postData?.email);
+      console.log(postData);
+
       const res = await fetch(
         "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdc6roZGEyf2ijXiybsv7jfDqkVh6USt8hCz4iQYF99MNZbRw/formResponse",
         {
@@ -108,7 +110,7 @@ export default function FormDrive({ data }) {
     router.push("/form" + conditation);
   };
   const dataNew = Number(page) > 1 ? dataApi?.data : data?.data;
-  console.log(dataNew);
+  // console.log(dataNew);
   return (
     <section className="w-[100vw] flex flex-col justify-center items-center">
       <form action="#" className="mt-[10rem]" onSubmit={handleSubmit}>
